@@ -10,7 +10,7 @@ import type { FieldsUiValues } from './types';
 
 export class Adalo implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Azure Blob',
+		displayName: 'Lostvayne Azure Blob',
 		name: 'adalo',
 		icon: 'file:azure-blob-storage.svg',
 		group: ['transform'],
