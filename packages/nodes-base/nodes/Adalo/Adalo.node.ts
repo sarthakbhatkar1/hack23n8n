@@ -12,7 +12,7 @@ export class Adalo implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Lostvayne Azure Blob',
 		name: 'adalo',
-		icon: 'file:azure-blob-storage.svg',
+		icon: 'file:blob-icon.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["collectionId"]}}',
