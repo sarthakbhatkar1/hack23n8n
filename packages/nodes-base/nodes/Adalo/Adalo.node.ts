@@ -10,9 +10,9 @@ import type { FieldsUiValues } from './types';
 
 export class Adalo implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Adalo',
+		displayName: 'Azure Blob',
 		name: 'adalo',
-		icon: 'file:adalo.svg',
+		icon: 'file:azure-blob-storage.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["collectionId"]}}',
