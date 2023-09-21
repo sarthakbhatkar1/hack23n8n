@@ -12,8 +12,8 @@ import { circleciApiRequest, circleciApiRequestAllItems } from './GenericFunctio
 
 export class CircleCi implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'CircleCI',
-		name: 'circleCi',
+		displayName: 'Content Summarization',
+		name: 'Content Summarization',
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-icon-not-svg
 		icon: 'file:circleCi.png',
 		group: ['output'],
@@ -21,7 +21,7 @@ export class CircleCi implements INodeType {
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume CircleCI API',
 		defaults: {
-			name: 'CircleCI',
+			name: 'Content Summarization',
 		},
 		inputs: ['main'],
 		outputs: ['main'],

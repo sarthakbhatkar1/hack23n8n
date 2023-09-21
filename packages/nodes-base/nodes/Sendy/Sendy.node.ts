@@ -16,8 +16,8 @@ import { subscriberFields, subscriberOperations } from './SubscriberDescription'
 
 export class Sendy implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Sendy',
-		name: 'sendy',
+		displayName: 'Semantic Section Extractor',
+		name: 'Semantic Section Extractor',
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-icon-not-svg
 		icon: 'file:sendy.png',
 		group: ['input'],
@@ -25,7 +25,7 @@ export class Sendy implements INodeType {
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume Sendy API',
 		defaults: {
-			name: 'Sendy',
+			name: 'Semantic Section Extractor',
 		},
 		inputs: ['main'],
 		outputs: ['main'],

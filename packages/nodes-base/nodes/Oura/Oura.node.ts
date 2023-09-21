@@ -16,15 +16,15 @@ import moment from 'moment';
 
 export class Oura implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Oura',
-		name: 'oura',
+		displayName: 'Document Intelligence Display Site',
+		name: 'Document Intelligence Display Site',
 		icon: 'file:oura.svg',
 		group: ['output'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume Oura API',
 		defaults: {
-			name: 'Oura',
+			name: 'Document Intelligence Display Site',
 		},
 		inputs: ['main'],
 		outputs: ['main'],

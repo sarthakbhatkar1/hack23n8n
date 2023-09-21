@@ -13,23 +13,50 @@ export const pipelineOperations: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Get',
-				value: 'get',
-				description: 'Get a pipeline',
-				action: 'Get a pipeline',
+				name: 'OpenAI',
+				value: 'OpenAI',
+				description: 'Create a openAI',
+				action: 'Create a openAI',
 			},
 			{
-				name: 'Get Many',
-				value: 'getAll',
-				description: 'Get many pipelines',
-				action: 'Get many pipelines',
+				name: 'Llama',
+				value: 'Llama',
+				description: 'Create a llama',
+				action: 'Create a llama',
+				options: [
+					{
+						name: 'Abstractive',
+						value: 'Abstractive',
+						description: 'Get a abstractive',
+						action: 'Get a abstractive',
+					},
+					{
+						name: 'Extractive',
+						value: 'Extractive',
+						description: 'Get a extractive',
+						action: 'Get a extractive',
+					},
+					
+				]
 			},
-			{
-				name: 'Trigger',
-				value: 'trigger',
-				description: 'Trigger a pipeline',
-				action: 'Trigger a pipeline',
-			},
+			// {
+			// 	name: 'Get',
+			// 	value: 'get',
+			// 	description: 'Get a pipeline',
+			// 	action: 'Get a pipeline',
+			// },
+			// {
+			// 	name: 'Get Many',
+			// 	value: 'getAll',
+			// 	description: 'Get many pipelines',
+			// 	action: 'Get many pipelines',
+			// },
+			// {
+			// 	name: 'Trigger',
+			// 	value: 'trigger',
+			// 	description: 'Trigger a pipeline',
+			// 	action: 'Trigger a pipeline',
+			// },
 		],
 		default: 'get',
 	},

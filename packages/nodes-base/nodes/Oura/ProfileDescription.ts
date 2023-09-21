@@ -12,12 +12,12 @@ export const profileOperations: INodeProperties[] = [
 			},
 		},
 		options: [
-			{
-				name: 'Get',
-				value: 'get',
-				description: "Get the user's personal information",
-				action: 'Get a profile',
-			},
+			// {
+			// 	name: 'Get',
+			// 	value: 'get',
+			// 	description: "Get the user's personal information",
+			// 	action: 'Get a profile',
+			// },
 		],
 		default: 'get',
 	},

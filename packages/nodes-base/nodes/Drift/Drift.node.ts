@@ -11,7 +11,7 @@ import type { IContact } from './ContactInterface';
 
 export class Drift implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Drift',
+		displayName: 'Document Indexer',
 		name: 'drift',
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-icon-not-svg
 		icon: 'file:drift.png',
@@ -20,7 +20,7 @@ export class Drift implements INodeType {
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume Drift API',
 		defaults: {
-			name: 'Drift',
+			name: 'Document Indexer',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
