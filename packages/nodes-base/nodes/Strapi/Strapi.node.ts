@@ -24,7 +24,7 @@ import { entryFields, entryOperations } from './EntryDescription';
 
 export class Strapi implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Strapi',
+		displayName: 'Anomaly Detection',
 		name: 'strapi',
 		icon: 'file:strapi.svg',
 		group: ['input'],
@@ -32,7 +32,7 @@ export class Strapi implements INodeType {
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume Strapi API',
 		defaults: {
-			name: 'Strapi',
+			name: 'Anomaly Detection',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
