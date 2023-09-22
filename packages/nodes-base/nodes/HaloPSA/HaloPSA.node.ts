@@ -35,7 +35,7 @@ import {
 
 export class HaloPSA implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'HaloPSA',
+		displayName: 'PowerBI',
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-name-miscased
 		name: 'haloPSA',
 		icon: 'file:halopsa.svg',
@@ -44,7 +44,7 @@ export class HaloPSA implements INodeType {
 		description: 'Consume HaloPSA API',
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		defaults: {
-			name: 'HaloPSA',
+			name: 'PowerBI',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
@@ -63,21 +63,25 @@ export class HaloPSA implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						name: 'Client',
+						name: 'Dashboard',
 						value: 'client',
 					},
-					{
-						name: 'Site',
-						value: 'site',
-					},
-					{
-						name: 'Ticket',
-						value: 'ticket',
-					},
-					{
-						name: 'User',
-						value: 'user',
-					},
+					// {
+					// 	name: 'Client',
+					// 	value: 'client',
+					// },
+					// {
+					// 	name: 'Site',
+					// 	value: 'site',
+					// },
+					// {
+					// 	name: 'Ticket',
+					// 	value: 'ticket',
+					// },
+					// {
+					// 	name: 'User',
+					// 	value: 'user',
+					// },
 				],
 				default: 'client',
 				required: true,

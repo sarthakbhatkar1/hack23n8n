@@ -97,7 +97,7 @@ type Options = IDataObject & {
 
 export class Mandrill implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Mandrill',
+		displayName: 'Text Summarization',
 		name: 'mandrill',
 		icon: 'file:mandrill.svg',
 		group: ['output'],
@@ -105,7 +105,7 @@ export class Mandrill implements INodeType {
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume Mandrill API',
 		defaults: {
-			name: 'Mandrill',
+			name: 'Text Summarization',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
@@ -142,17 +142,29 @@ export class Mandrill implements INodeType {
 				},
 				options: [
 					{
-						name: 'Send Template',
-						value: 'sendTemplate',
-						description: 'Send message based on template',
-						action: 'Send a message based on a template',
+						name: 'Extractive',
+						value: 'Extractive',
+						description: 'Extractive',
+						action: 'Extractive',
 					},
 					{
-						name: 'Send HTML',
-						value: 'sendHtml',
-						description: 'Send message based on HTML',
-						action: 'Send a message based on HTML',
+						name: 'Abstractive',
+						value: 'Abstractive',
+						description: 'Abstractive',
+						action: 'Abstractive',
 					},
+					// {
+					// 	name: 'Send Template',
+					// 	value: 'sendTemplate',
+					// 	description: 'Send message based on template',
+					// 	action: 'Send a message based on a template',
+					// },
+					// {
+					// 	name: 'Send HTML',
+					// 	value: 'sendHtml',
+					// 	description: 'Send message based on HTML',
+					// 	action: 'Send a message based on HTML',
+					// },
 				],
 				default: 'sendTemplate',
 			},
